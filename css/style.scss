@@ -1,0 +1,142 @@
+$bgcolor: #071e3d;
+$primary: black;
+$secondary: #fdfdfd;
+$othercolor: #f5eded;
+body{
+    background: $bgcolor;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+//! nav
+nav {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+    .logo h1
+    {
+        color: $secondary;
+    }
+  .hamburger {
+    div {
+        transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+      width: 25px;
+      height: 3px;
+    //   background-color: black;
+    background-color: $othercolor;
+      margin: 6px 0;
+    }
+  }
+  ul.links {
+    display: none;
+    margin-top: 10px;
+    width: 100%;
+    padding: 20px;
+    background: gray;
+    text-align: center;
+    transition: 0.2s;
+    // display: flex;
+    li a {
+      color: black;
+    }
+  }
+  ul.show {
+    display: block;
+    // margin-top: 10px;
+    // width: 100%;
+    // padding: 20px;
+    // background: gray;
+    // text-align: center;
+  }
+}
+// nav
+// hamburger
+.l1demo{
+    transform: rotate(45deg);
+}
+.l2demo{
+    transform: rotate(-45deg);
+}
+.l3demo{
+    display: none;
+}
+// hamburger
+
+// section
+section{
+    padding: 0px 20px;
+    background-color: $bgcolor;
+}
+    
+    #sec-1{
+        min-height: 80vh;
+        .left{
+            padding-top: 20px;
+            h1 {
+                color: $secondary;
+                font-size: 4.3rem;
+                span {
+                  color: #f5f24b;
+                //   font-size: 4.7rem;
+                  background: linear-gradient(
+                    to right,
+                    #8e9eab,
+                    #eef2f3
+                  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                  background: -webkit-linear-gradient(
+                    to right,
+                    #8e9eab,
+                    #eef2f3
+                  ); /* Chrome 10-25, Safari 5.1-6 */
+            
+                  -webkit-text-fill-color: transparent;
+                  -webkit-background-clip: text;
+                }
+              }
+        }
+        .right{
+            display: none;
+        }
+        
+    }
+
+    #sec-2
+    {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        h2{
+            text-align: center;
+            color: $othercolor;
+        }
+        // .sec-s{
+        //     display:flex;
+        //     justify-content: center;
+        //     align-items: center;
+        //     flex-direction: column;
+        // }
+    }
+
+// section

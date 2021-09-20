@@ -1,0 +1,141 @@
+body {
+  background: #071e3d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+nav .logo h1 {
+  color: #fdfdfd;
+}
+
+nav .hamburger div {
+  -webkit-transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  width: 25px;
+  height: 3px;
+  background-color: #f5eded;
+  margin: 6px 0;
+}
+
+nav ul.links {
+  display: none;
+  margin-top: 10px;
+  width: 100%;
+  padding: 20px;
+  background: gray;
+  text-align: center;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+nav ul.links li a {
+  color: black;
+}
+
+nav ul.show {
+  display: block;
+}
+
+.l1demo {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.l2demo {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.l3demo {
+  display: none;
+}
+
+section {
+  padding: 0px 20px;
+  background-color: #071e3d;
+}
+
+#sec-1 {
+  min-height: 80vh;
+}
+
+#sec-1 .left {
+  padding-top: 20px;
+}
+
+#sec-1 .left h1 {
+  color: #fdfdfd;
+  font-size: 4.3rem;
+}
+
+#sec-1 .left h1 span {
+  color: #f5f24b;
+  background: -webkit-gradient(linear, left top, right top, from(#8e9eab), to(#eef2f3));
+  background: linear-gradient(to right, #8e9eab, #eef2f3);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #8e9eab, #eef2f3);
+  /* Chrome 10-25, Safari 5.1-6 */
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+#sec-1 .right {
+  display: none;
+}
+
+#sec-2 {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#sec-2 h2 {
+  text-align: center;
+  color: #f5eded;
+}
+/*# sourceMappingURL=style.css.map */
